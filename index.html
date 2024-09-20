@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Docsify-Guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="A guide for using Docsify to create documentation websites."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Theme: Simple Dark -->
+    <link rel="stylesheet" href="./assert/css/theme-simple-dark.css" />
+    <!-- <link rel="stylesheet" href="path/to/custom.css" /> -->
+  </head>
+
+  <body>
+    <div id="app">加载中...</div>
+    <script>
+      window.$docsify = {
+        name: "WangSong", // Your project or site name
+        repo: "https://github.com/songsong2001", // Link to your GitHub repo
+        loadSidebar: true, // Enable sidebar navigation
+        loadNavbar: true, // Enable top navigation bar
+        coverpage: true, // Show a cover page
+        maxLevel: 4, // Maximum header level to show in the sidebar (1-6)
+        subMaxLevel: 3, // Max subheader level to evolve into
+        mergeNavbar: true, // Merge navbar when small screen
+        search: {
+          maxAge: 86400000, // Expiry duration for search index cache (in ms)
+          paths: "auto", // Auto-generate search paths
+          placeholder: {
+            "/zh-cn/": "搜索",
+            "/": "Type to search",
+          },
+          noData: {
+            "/zh-cn/": "找不到结果",
+            "/": "No results found",
+          },
+          depth: 3, // Search depth level
+          hideOtherSidebarContent: true, // Hide other sidebar content on search
+          namespace: "Docsify-Guide",
+        },
+        themeColor: "#e2b56b", // Primary theme color
+        themeable: {
+          readyTransition: true, // Smooth page transitions
+          responsiveTables: true, // Make tables responsive
+        },
+        pagination: {
+          previousText: "上一页",
+          nextText: "下一页",
+          crossChapter: true,
+          crossChapterText: true,
+        },
+        auto2top: true, // Automatically scroll to top when switching pages
+        copyCode: {
+          buttonText: "复制代码",
+          successText: "已复制",
+        },
+        darkMode: {
+          darkColor: "#020202", // Background color for dark mode
+          lightColor: "#ffffff", // Background color for light mode
+        },
+        timeUpdater: {
+          text: "Last updated on ${date}",
+        },
+      };
+    </script>
+
+    <script src="./assert/js/docsify.min.js"></script>
+    <script src="./assert/js/emoji.min.js"></script>
+    <script src="./assert/js/zoom-image.min.js"></script>
+    <script src="./assert/js/search.min.js"></script>
+    <script src="./assert/js/docsify-copy-code.min.js"></script>
+  </body>
+</html>
