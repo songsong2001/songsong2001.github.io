@@ -1,0 +1,74 @@
+body {
+  font-family: "SimHei", "Microsoft YaHei", "PingFang SC", "WenQuanYi Micro Hei",
+    sans-serif !important;
+}
+
+h1 {
+  /*   font-family: "SimHei", "Microsoft YaHei", "PingFang SC", "WenQuanYi Micro Hei",
+    sans-serif !important; */
+  font-size: 24px !important; /* 一级标题 */
+  text-indent: 0em; /* Adding indentation */
+}
+
+h2 {
+  /*  font-family: "SimHei", "Microsoft YaHei", "PingFang SC", "WenQuanYi Micro Hei",
+    sans-serif !important; */
+  font-size: 20px !important; /* 二级标题 */
+  text-indent: 0em; /* Adding indentation */
+}
+
+h3 {
+  /*   font-family: "SimHei", "Microsoft YaHei", "PingFang SC", "WenQuanYi Micro Hei",
+    sans-serif !important; */
+  font-size: 16px !important; /* 三级标题 */
+  font-weight: normal; /* Matching the paragraph styling */
+  line-height: 1.6 !important; /* Matching the paragraph line-height */
+  text-indent: 1em; /* Adding indentation */
+}
+
+p {
+  /*  font-family: "SimHei", "Microsoft YaHei", "PingFang SC", "WenQuanYi Micro Hei",
+    sans-serif !important; */
+  font-size: 16px !important; /* 段落字体大小 */
+  line-height: 1.6 !important;
+  text-indent: 1em; /* Adding indentation */
+}
+
+/* Inline code style for red color */
+code {
+  color: red !important; /* Use !important to ensure it overrides any other styling */
+  background-color: transparent; /* Set background to transparent or another color if needed */
+  font-family: "Courier New", Courier, monospace; /* Optionally change the font family to a monospaced font */
+}
+
+/* Set the main content area to 90% width and center it */
+.book-body .page-wrapper {
+  width: 95%;
+  max-width: none; /* Remove any max-width constraints */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  z-index: 1; /* Ensure it doesn't overlap with navigation icons */
+}
+
+/* Optional: Adjust the inner content if needed */
+.book-body .page-inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure search results and other elements are also adjusted */
+.book-search-results,
+.search-noresults {
+  width: 95%;
+  max-width: none;
+  margin: 0 auto; /* Center these elements as well */
+  box-sizing: border-box;
+}
+
+.navigation.navigation-next {
+  margin-right: 0 !important; /* Use !important to override inline styles if necessary */
+}
